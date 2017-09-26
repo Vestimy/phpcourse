@@ -7,12 +7,24 @@
    echo $this->title;
    echo "\n"; // перенос строки
 */
+
 class Publication {
     public $title;
     private $date;
+    public $content;
+    public $author;
+
 
     public function setDate($date) 
     {
-        $this->date = $date;
+       $this->date = $date;
+
+    }
+    public function my_print(){
+        echo "<h1>".$this->title."</h1>";
+        echo "<p>".$this->content."</p>";
+        echo "<h3>".$this->author.$this->date."</h3>";
+        
+        
     }
 }

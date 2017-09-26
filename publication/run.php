@@ -1,10 +1,9 @@
 <?php
 require_once('Publication.php');
 
-$p1 = new Publication;
-$p1->title = 'Публикация 1';
-$p1->setDate(time());
-$p2 = new Publication;
-
-var_dump($p1);
-var_dump($p2);
+$p3 = new Publication;
+$p3->title="Медиа как узнавание бренда.";
+$p3->content="Клиентский спрос сфокусирован. Формат события конкурентоспособен. Наряду с этим, целевой сегмент рынка нейтрализует сублимированный медиабизнес.";
+$p3->setDate(date('d-m-Y H:i:s','1506427351'));
+$p3->author="Игорь Печкин. ";
+$p3->my_print();
