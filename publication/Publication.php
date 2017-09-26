@@ -21,8 +21,8 @@ class Publication {
 
     }
     public function myPrint(){
-        echo "<h1>".$this->title."</h1>";
-        echo "<p>".$this->content."</p>";
+        echo "<h1>".$this->title."</h1>\n";
+        echo "<p>".$this->content."</p>\n";
         echo "<h3>".$this->author.$this->date."</h3>";
         
         
