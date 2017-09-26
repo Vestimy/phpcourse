@@ -20,7 +20,7 @@ class Publication {
        $this->date = $date;
 
     }
-    public function my_print(){
+    public function myPrint(){
         echo "<h1>".$this->title."</h1>";
         echo "<p>".$this->content."</p>";
         echo "<h3>".$this->author.$this->date."</h3>";
