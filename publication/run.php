@@ -1,14 +1,14 @@
 <?php
-require_once('Publication.php');
+require_once('News.php');
 
-$p3 = new Publication("Медиа как узнавание бренда.");
+$p3 = new News("Media");
 
-$p3->importance = 'Важно!';
+$p3->content="Content";
+$p3->author="Author.";
 
-echo $p3->date;
+$p3->print();
+
+$p3->importance = true;
+$p3->print();
 
 echo "\n";
-
-// $p3->content="Клиентский спрос сфокусирован. Формат события конкурентоспособен. Наряду с этим, целевой сегмент рынка нейтрализует сублимированный медиабизнес.";
-// $p3->author="Игорь Печкин. ";
-// $p3->myPrint();

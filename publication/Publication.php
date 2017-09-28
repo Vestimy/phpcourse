@@ -17,7 +17,7 @@ class Publication {
     }
 
     public function __get($name) {
-        if ($name == 'date') return getDate();
+        if ($name == 'date') return $this->getDate();
     }
 
     /*
@@ -35,9 +35,10 @@ class Publication {
     {
        $this->date = $date;
     }
-    public function myPrint(){
-        echo "<h1>".$this->title."</h1>\n";
+    public function print(){
+        echo "<h1>{$this->title}</h1>\n";
         echo "<p>".$this->content."</p>\n";
         echo "<h3>" . $this->author . $this->getDate() . "</h3>";
+        echo "\n";
     }
 }
