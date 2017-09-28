@@ -1,24 +1,20 @@
 <?php
-class Publication {
-    public $title;
-    private $date;
-    // private $importance;
-    public $content;
-    public $author;
+require_once('ActiveRecord.php');
 
-    function __construct($title, $date = null)
-    {
-        echo "construct\n";
-        $this->title = $title;
-        if (!is_null($date))
-            $this->setDate($date);
-        else
-            $this->setDate(time());
-    }
+class Publication extends ActiveRecord {
 
-    public function __get($name) {
-        if ($name == 'date') return $this->getDate();
-    }
+    // function __construct($title, $date = null)
+    // {
+    //     $this->title = $title;
+    //     if (!is_null($date))
+    //         $this->setDate($date);
+    //     else
+    //         $this->setDate(time());
+    // }
+
+    // public function __get($name) {
+    //     if ($name == 'date') return $this->getDate();
+    // }
 
     /*
     public function __set($name, $value)

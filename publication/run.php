@@ -1,14 +1,16 @@
 <?php
-require_once('News.php');
+require_once('Publication.php');
 
-$p3 = new News("Media");
-
+/*
+$p3 = new Publication();
+$p3->title="Media";
 $p3->content="Content";
-$p3->author="Author.";
+$p3->author="Author";
 
-$p3->print();
+$p3->save();
+*/
 
-$p3->importance = true;
-$p3->print();
+$p = Publication::get('Media');
+var_dump($p);
 
 echo "\n";
